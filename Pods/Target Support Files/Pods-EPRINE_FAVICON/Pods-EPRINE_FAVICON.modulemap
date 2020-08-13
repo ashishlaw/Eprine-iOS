@@ -1,0 +1,6 @@
+framework module Pods_EPRINE_FAVICON {
+  umbrella header "Pods-EPRINE_FAVICON-umbrella.h"
+
+  export *
+  module * { export * }
+}
