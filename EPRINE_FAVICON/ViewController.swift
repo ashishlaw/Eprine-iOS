@@ -10,6 +10,7 @@ import WebKit
 import OneSignal
 import Alamofire
 import PKHUD
+import JWTDecode
 
 extension Notification.Name {
     static let didReceiveData = Notification.Name("didReceiveData")
@@ -32,7 +33,7 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
-         super.viewDidLoad()
+        super.viewDidLoad()
         setupUI()
         //let session = URLSession(configuration: URLSessionConfiguration.default, delegate: self, delegateQueue: nil)
     }
@@ -45,8 +46,6 @@ class ViewController: UIViewController {
         let fileURL = "https://eprine.test.adaptivetelehealth.com/index.php/api/login.json"
         let parameters : Parameters = ["username": txtFldEmail.text!, "password": txtFldPassword.text!, "app_name": "eprine", "device_id": UserStore.shared.deviceToken]
         HUD.show(.progress)
-        
-        
         session.request(fileURL, method: .post, parameters: parameters).responseJSON {
             response in
             print(response)
@@ -56,6 +55,7 @@ class ViewController: UIViewController {
                     UserStore.shared.deviceToken = dict["device_id"] as! String
                     let data = dict["data"] as! [String:Any]
                     self.token = (data["jwt"] as! [String:Any])["id_token"] as? String ?? ""
+                    self.getZoomUserNameandIdFromToken(userToken: self.token)
                     UserStore.shared.token = self.token
                     if UserStore.shared.boolBioMetric {
                         let alert = UIAlertController(title: "BioMetrics authentication activated.", message: "", preferredStyle: .alert)
@@ -74,6 +74,37 @@ class ViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    func getZoomUserNameandIdFromToken(userToken: String) {
+        do {
+            let jwt = try decode(jwt: userToken)
+            let body = jwt.body
+            let userData = body["userdata"]
+            let test1 = userData as? NSMutableString
+            guard let value = convertToDictionary(text: String.init(test1!)) else {
+                return
+            }
+            if let userDetails = value.first {
+                if let fullname = userDetails["full_name"] as? String, let zoomID = userDetails["zoom_id"] as? String {
+                    UserStore.shared.zoomUserName = fullname
+                    UserStore.shared.zoomId = zoomID
+                }
+            }
+        } catch {
+            print("Failed to decode JWT: \(error)")
+        }
+    }
+    
+    func convertToDictionary(text: String) -> [[String: Any]]? {
+        if let data = text.data(using: .utf8) {
+            do {
+                return try JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]]
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        return nil
     }
     
     func setupUI() {
@@ -114,7 +145,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func loginAction(_ sender: UIButton) {
-        
         if !(txtFldEmail.text?.isEmpty)! && !(txtFldPassword.text?.isEmpty)! {
             loginApi()
             UserStore.shared.username = txtFldEmail.text!

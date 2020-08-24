@@ -25,6 +25,8 @@ class UserStore: NSObject {
     var rememberKey    = "remember"
     var usernameKey    = "username"
     var passwordKey    = "password"
+    var zoomUserNameKey   = "zoomUserName"
+    var zoomIdKey         = "zoomId"
     
     //MARK:- Cart Type
     var token: String {
@@ -72,6 +74,22 @@ class UserStore: NSObject {
             return UserDefaults.standard.value(forKey: passwordKey) as? String ?? ""
         } set {
             UserDefaults.standard.set(newValue, forKey: passwordKey)
+        }
+    }
+    
+    var zoomUserName: String {
+        get {
+            return UserDefaults.standard.value(forKey: zoomUserNameKey) as? String ?? ""
+        } set {
+            UserDefaults.standard.set(newValue, forKey: zoomUserNameKey)
+        }
+    }
+    
+    var zoomId: String {
+        get {
+            return UserDefaults.standard.value(forKey: zoomIdKey) as? String ?? ""
+        } set {
+            UserDefaults.standard.set(newValue, forKey: zoomIdKey)
         }
     }
 }

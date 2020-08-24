@@ -285,6 +285,21 @@
             </objects>
             <point key="canvasLocation" x="2818.840579710145" y="138.61607142857142"/>
         </scene>
+        <!--Zoom View Controller-->
+        <scene sceneID="Bku-RK-dhH">
+            <objects>
+                <viewController storyboardIdentifier="ZoomViewController" id="qV1-A9-8KS" customClass="ZoomViewController" customModule="EPRINE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lHa-Yi-QgD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Nxb-wK-CxA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cz6-fS-OhS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3659" y="139"/>
+        </scene>
         <!--Splash Screen-->
         <scene sceneID="noo-4P-wXF">
             <objects>
@@ -299,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mbb-HC-Z5F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4950.7246376811599" y="142.63392857142856"/>
+            <point key="canvasLocation" x="5684" y="143"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8Ct-ja-q8P">
@@ -352,7 +367,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t0N-77-Tze" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4040.579710144928" y="142.63392857142856"/>
+            <point key="canvasLocation" x="4862" y="143"/>
         </scene>
     </scenes>
     <resources>
