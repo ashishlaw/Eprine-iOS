@@ -10,6 +10,5 @@ pod 'OneSignal', '>= 2.6.2', '< 3.0'
 pod 'Alamofire'
 pod 'PKHUD'
 pod 'IQKeyboardManagerSwift'
-pod 'JWTDecode', '~> 2.4'
 
 end

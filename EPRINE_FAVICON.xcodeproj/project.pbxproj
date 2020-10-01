@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7D4CA59D24D3E269006F5A26 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4CA59C24D3E269006F5A26 /* NetworkManager.swift */; };
+		7D6CE6452509EE7A00FBEFC1 /* ForgotControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6CE6442509EE7A00FBEFC1 /* ForgotControl.swift */; };
+		7D6CE659250A07D100FBEFC1 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6CE6542509FF6600FBEFC1 /* Raleway-Regular.ttf */; };
+		7D6CE65A250A07DC00FBEFC1 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6CE6572509FF6600FBEFC1 /* Raleway-SemiBold.ttf */; };
 		7D6CF50924BEC96A00B7D716 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6CF50824BEC96A00B7D716 /* AppDelegate.swift */; };
+		7D6CF50B24BEC96A00B7D716 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6CF50A24BEC96A00B7D716 /* SceneDelegate.swift */; };
 		7D6CF50D24BEC96A00B7D716 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6CF50C24BEC96A00B7D716 /* ViewController.swift */; };
 		7D6CF51224BEC96B00B7D716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D6CF51124BEC96B00B7D716 /* Assets.xcassets */; };
 		7D6CF51524BEC96B00B7D716 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D6CF51324BEC96B00B7D716 /* LaunchScreen.storyboard */; };
@@ -18,32 +22,34 @@
 		7D6CF52424BECA8900B7D716 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D6CF52324BECA8900B7D716 /* Main.storyboard */; };
 		7D6CF52624BECAE100B7D716 /* WebViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6CF52524BECAE100B7D716 /* WebViewControl.swift */; };
 		8A671966E3AA3E01C3148DC2 /* Pods_EPRINE_FAVICON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD2ECB71CA260FC1F70EE98 /* Pods_EPRINE_FAVICON.framework */; };
-		EB78B58024EAE5BC00912F58 /* MobileRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDE121724E7D8110018C694 /* MobileRTC.framework */; };
-		EB78B58124EAE5BC00912F58 /* MobileRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBDE121724E7D8110018C694 /* MobileRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EBDE121424E7D4CA0018C694 /* MobileRTCResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EBDE121324E7D4CA0018C694 /* MobileRTCResources.bundle */; };
-		EBDE121A24E7FB150018C694 /* ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE121924E7FB150018C694 /* ZoomViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		EBDE121224E7D47E0018C694 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				EB78B58124EAE5BC00912F58 /* MobileRTC.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		03EFE152DF06AFB97D157DA6 /* Pods-EPRINE_FAVICON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EPRINE_FAVICON.release.xcconfig"; path = "Target Support Files/Pods-EPRINE_FAVICON/Pods-EPRINE_FAVICON.release.xcconfig"; sourceTree = "<group>"; };
 		6BD2ECB71CA260FC1F70EE98 /* Pods_EPRINE_FAVICON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EPRINE_FAVICON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D4CA59C24D3E269006F5A26 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7D6CE6442509EE7A00FBEFC1 /* ForgotControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotControl.swift; sourceTree = "<group>"; };
+		7D6CE6472509FF6400FBEFC1 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		7D6CE6482509FF6400FBEFC1 /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
+		7D6CE6492509FF6500FBEFC1 /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		7D6CE64A2509FF6500FBEFC1 /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		7D6CE64B2509FF6500FBEFC1 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
+		7D6CE64C2509FF6500FBEFC1 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		7D6CE64D2509FF6500FBEFC1 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
+		7D6CE64E2509FF6500FBEFC1 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		7D6CE64F2509FF6500FBEFC1 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		7D6CE6502509FF6500FBEFC1 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		7D6CE6512509FF6500FBEFC1 /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
+		7D6CE6522509FF6500FBEFC1 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		7D6CE6532509FF6500FBEFC1 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
+		7D6CE6542509FF6600FBEFC1 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		7D6CE6552509FF6600FBEFC1 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		7D6CE6562509FF6600FBEFC1 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		7D6CE6572509FF6600FBEFC1 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		7D6CE6582509FF6600FBEFC1 /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
 		7D6CF50524BEC96A00B7D716 /* EPRINE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPRINE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6CF50824BEC96A00B7D716 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D6CF50A24BEC96A00B7D716 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7D6CF50C24BEC96A00B7D716 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7D6CF51124BEC96B00B7D716 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D6CF51424BEC96B00B7D716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,11 +60,6 @@
 		7D6CF52324BECA8900B7D716 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7D6CF52524BECAE100B7D716 /* WebViewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewControl.swift; sourceTree = "<group>"; };
 		8D9B7FBBF1EFF3E1BE251C39 /* Pods-EPRINE_FAVICON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EPRINE_FAVICON.debug.xcconfig"; path = "Target Support Files/Pods-EPRINE_FAVICON/Pods-EPRINE_FAVICON.debug.xcconfig"; sourceTree = "<group>"; };
-		EBB739FB24EC17C600F65664 /* EPRINE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EPRINE.entitlements; sourceTree = "<group>"; };
-		EBDE121324E7D4CA0018C694 /* MobileRTCResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobileRTCResources.bundle; sourceTree = "<group>"; };
-		EBDE121724E7D8110018C694 /* MobileRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileRTC.framework; sourceTree = "<group>"; };
-		EBDE121924E7FB150018C694 /* ZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomViewController.swift; sourceTree = "<group>"; };
-		EBEF448124EDA8CF00E44F87 /* EPRINEDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EPRINEDebug.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB78B58024EAE5BC00912F58 /* MobileRTC.framework in Frameworks */,
 				8A671966E3AA3E01C3148DC2 /* Pods_EPRINE_FAVICON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,12 +74,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D6CE6462509FF4100FBEFC1 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				7D6CE64B2509FF6500FBEFC1 /* Raleway-Black.ttf */,
+				7D6CE6532509FF6500FBEFC1 /* Raleway-BlackItalic.ttf */,
+				7D6CE6502509FF6500FBEFC1 /* Raleway-Bold.ttf */,
+				7D6CE6482509FF6400FBEFC1 /* Raleway-BoldItalic.ttf */,
+				7D6CE6522509FF6500FBEFC1 /* Raleway-ExtraBold.ttf */,
+				7D6CE6562509FF6600FBEFC1 /* Raleway-ExtraBoldItalic.ttf */,
+				7D6CE64C2509FF6500FBEFC1 /* Raleway-ExtraLight.ttf */,
+				7D6CE64A2509FF6500FBEFC1 /* Raleway-ExtraLightItalic.ttf */,
+				7D6CE64F2509FF6500FBEFC1 /* Raleway-Italic.ttf */,
+				7D6CE6472509FF6400FBEFC1 /* Raleway-Light.ttf */,
+				7D6CE6512509FF6500FBEFC1 /* Raleway-LightItalic.ttf */,
+				7D6CE64E2509FF6500FBEFC1 /* Raleway-Medium.ttf */,
+				7D6CE6582509FF6600FBEFC1 /* Raleway-MediumItalic.ttf */,
+				7D6CE6542509FF6600FBEFC1 /* Raleway-Regular.ttf */,
+				7D6CE6572509FF6600FBEFC1 /* Raleway-SemiBold.ttf */,
+				7D6CE6492509FF6500FBEFC1 /* Raleway-SemiBoldItalic.ttf */,
+				7D6CE6552509FF6600FBEFC1 /* Raleway-Thin.ttf */,
+				7D6CE64D2509FF6500FBEFC1 /* Raleway-ThinItalic.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		7D6CF4FC24BEC96A00B7D716 = {
 			isa = PBXGroup;
 			children = (
-				EBDE121324E7D4CA0018C694 /* MobileRTCResources.bundle */,
 				7D6CF50724BEC96A00B7D716 /* EPRINE_FAVICON */,
 				7D6CF50624BEC96A00B7D716 /* Products */,
+				7D6CE6462509FF4100FBEFC1 /* Font */,
 				ECE126A39E58897DA568FB20 /* Pods */,
 				F095BE26B00E854206A7F0D4 /* Frameworks */,
 			);
@@ -96,17 +121,16 @@
 		7D6CF50724BEC96A00B7D716 /* EPRINE_FAVICON */ = {
 			isa = PBXGroup;
 			children = (
-				EBEF448124EDA8CF00E44F87 /* EPRINEDebug.entitlements */,
-				EBB739FB24EC17C600F65664 /* EPRINE.entitlements */,
 				7D6CF51C24BECA4800B7D716 /* Auth */,
 				7D6CF50824BEC96A00B7D716 /* AppDelegate.swift */,
+				7D6CF50A24BEC96A00B7D716 /* SceneDelegate.swift */,
 				7D6CF50C24BEC96A00B7D716 /* ViewController.swift */,
+				7D6CE6442509EE7A00FBEFC1 /* ForgotControl.swift */,
 				7D6CF52524BECAE100B7D716 /* WebViewControl.swift */,
 				7D6CF52324BECA8900B7D716 /* Main.storyboard */,
 				7D6CF51124BEC96B00B7D716 /* Assets.xcassets */,
 				7D6CF51324BEC96B00B7D716 /* LaunchScreen.storyboard */,
 				7D6CF51624BEC96B00B7D716 /* Info.plist */,
-				EBDE121924E7FB150018C694 /* ZoomViewController.swift */,
 			);
 			path = EPRINE_FAVICON;
 			sourceTree = "<group>";
@@ -134,7 +158,6 @@
 		F095BE26B00E854206A7F0D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EBDE121724E7D8110018C694 /* MobileRTC.framework */,
 				6BD2ECB71CA260FC1F70EE98 /* Pods_EPRINE_FAVICON.framework */,
 			);
 			name = Frameworks;
@@ -152,7 +175,6 @@
 				7D6CF50224BEC96A00B7D716 /* Frameworks */,
 				7D6CF50324BEC96A00B7D716 /* Resources */,
 				BE0404545E34FB0A55982DCB /* [CP] Embed Pods Frameworks */,
-				EBDE121224E7D47E0018C694 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,10 +223,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBDE121424E7D4CA0018C694 /* MobileRTCResources.bundle in Resources */,
 				7D6CF52424BECA8900B7D716 /* Main.storyboard in Resources */,
 				7D6CF51524BEC96B00B7D716 /* LaunchScreen.storyboard in Resources */,
 				7D6CF51224BEC96B00B7D716 /* Assets.xcassets in Resources */,
+				7D6CE659250A07D100FBEFC1 /* Raleway-Regular.ttf in Resources */,
+				7D6CE65A250A07DC00FBEFC1 /* Raleway-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,13 +281,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D6CF52224BECA5200B7D716 /* UserStore.swift in Sources */,
-				EBDE121A24E7FB150018C694 /* ZoomViewController.swift in Sources */,
 				7D6CF52124BECA5200B7D716 /* TouchID.swift in Sources */,
 				7D6CF52024BECA5200B7D716 /* SplashScreen.swift in Sources */,
 				7D6CF52624BECAE100B7D716 /* WebViewControl.swift in Sources */,
 				7D4CA59D24D3E269006F5A26 /* NetworkManager.swift in Sources */,
 				7D6CF50D24BEC96A00B7D716 /* ViewController.swift in Sources */,
 				7D6CF50924BEC96A00B7D716 /* AppDelegate.swift in Sources */,
+				7D6CF50B24BEC96A00B7D716 /* SceneDelegate.swift in Sources */,
+				7D6CE6452509EE7A00FBEFC1 /* ForgotControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,29 +425,20 @@
 			baseConfigurationReference = 8D9B7FBBF1EFF3E1BE251C39 /* Pods-EPRINE_FAVICON.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = EPRINE_FAVICON/EPRINEDebug.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = PP625QKW62;
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				INFOPLIST_FILE = EPRINE_FAVICON/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Eprine-favicon";
 				PRODUCT_NAME = EPRINE;
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -432,29 +447,20 @@
 			baseConfigurationReference = 03EFE152DF06AFB97D157DA6 /* Pods-EPRINE_FAVICON.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = EPRINE_FAVICON/EPRINE.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = PP625QKW62;
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				INFOPLIST_FILE = EPRINE_FAVICON/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Eprine-favicon";
 				PRODUCT_NAME = EPRINE;
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};

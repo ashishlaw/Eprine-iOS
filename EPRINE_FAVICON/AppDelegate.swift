@@ -9,11 +9,9 @@
 import UIKit
 import OneSignal
 import IQKeyboardManagerSwift
-import MobileRTC
-import MobileCoreServices
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, OSSubscriptionObserver,MobileRTCAuthDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, OSSubscriptionObserver {
     
     var window: UIWindow?
     
@@ -36,7 +34,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSSubscriptionObserver,Mo
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         sleep(3)
         OneSignal.add(self as OSSubscriptionObserver)
+        
         let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false]
+        
         // Replace 'YOUR_APP_ID' with your OneSignal App ID.
         OneSignal.initWithLaunchOptions(launchOptions,
                                         appId: "9ede2442-fa35-4365-a93c-7264f6f6ec11",
@@ -44,10 +44,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSSubscriptionObserver,Mo
                                         settings: onesignalInitSettings)
         
         OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification;
+        
         OneSignal.promptForPushNotifications(userResponse: { accepted in
             print("User accepted notifications: \(accepted)")
         })
-        authenticateZoomSDK()
         DispatchQueue.main.async {
             if UserStore.shared.token == "" {
                 self.setLogin()
@@ -61,32 +61,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSSubscriptionObserver,Mo
         }
         IQKeyboardManager.shared.enable = true
         return true
-    }
-    
-    func authenticateZoomSDK() {
-        let mainSDK = MobileRTCSDKInitContext.init()
-        mainSDK.domain = "zoom.us"
-        mainSDK.enableLog = true
-        MobileRTC.shared().initialize(mainSDK)
-        let authService = MobileRTC.shared().getAuthService()
-        
-        let clientKey = "pKKqeqUpAVe0RZdV7MT6MfjeBmUI6UMnMPWq"
-        let clientSecret = "KdS9mJ3Q4KxGH8ufIIpcWHOYmWrcKP6WEWZ9"
-        
-        if let authService = authService {
-            authService.delegate = self
-            authService.clientKey = clientKey
-            authService.clientSecret = clientSecret
-            authService.sdkAuth()
-        }
-    }
-    
-    func onMobileRTCAuthReturn(_ returnValue: MobileRTCAuthError) {
-        print(returnValue)
-        if (returnValue != MobileRTCAuthError_Success) {
-            let msg = "SDK authentication failed, error code: \(returnValue)"
-            print(msg)
-        }
     }
     
     
@@ -113,6 +87,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSSubscriptionObserver,Mo
     
     // MARK: UISceneSession Lifecycle
     
+    @available(iOS 13.0, *)
+    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        // Called when a new scene session is being created.
+        // Use this method to select a configuration to create the new scene with.
+        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    }
+    
+    @available(iOS 13.0, *)
+    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+        // Called when the user discards a scene session.
+        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
+        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
     
 }
 
