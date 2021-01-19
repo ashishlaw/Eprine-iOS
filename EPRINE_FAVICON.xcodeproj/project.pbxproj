@@ -22,6 +22,8 @@
 		7D6CF52424BECA8900B7D716 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D6CF52324BECA8900B7D716 /* Main.storyboard */; };
 		7D6CF52624BECAE100B7D716 /* WebViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6CF52524BECAE100B7D716 /* WebViewControl.swift */; };
 		8A671966E3AA3E01C3148DC2 /* Pods_EPRINE_FAVICON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD2ECB71CA260FC1F70EE98 /* Pods_EPRINE_FAVICON.framework */; };
+		8C86F39D25949F9F00C11982 /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86F39C25949F9F00C11982 /* UserList.swift */; };
+		8C86F3A02594B46C00C11982 /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86F39F2594B46C00C11982 /* UserListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		7D6CF51F24BECA5200B7D716 /* UserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		7D6CF52324BECA8900B7D716 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7D6CF52524BECAE100B7D716 /* WebViewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewControl.swift; sourceTree = "<group>"; };
+		8C86F39C25949F9F00C11982 /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
+		8C86F39F2594B46C00C11982 /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
 		8D9B7FBBF1EFF3E1BE251C39 /* Pods-EPRINE_FAVICON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EPRINE_FAVICON.debug.xcconfig"; path = "Target Support Files/Pods-EPRINE_FAVICON/Pods-EPRINE_FAVICON.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +129,8 @@
 				7D6CF50824BEC96A00B7D716 /* AppDelegate.swift */,
 				7D6CF50A24BEC96A00B7D716 /* SceneDelegate.swift */,
 				7D6CF50C24BEC96A00B7D716 /* ViewController.swift */,
+				8C86F39F2594B46C00C11982 /* UserListTableViewCell.swift */,
+				8C86F39C25949F9F00C11982 /* UserList.swift */,
 				7D6CE6442509EE7A00FBEFC1 /* ForgotControl.swift */,
 				7D6CF52524BECAE100B7D716 /* WebViewControl.swift */,
 				7D6CF52324BECA8900B7D716 /* Main.storyboard */,
@@ -280,8 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C86F39D25949F9F00C11982 /* UserList.swift in Sources */,
 				7D6CF52224BECA5200B7D716 /* UserStore.swift in Sources */,
 				7D6CF52124BECA5200B7D716 /* TouchID.swift in Sources */,
+				8C86F3A02594B46C00C11982 /* UserListTableViewCell.swift in Sources */,
 				7D6CF52024BECA5200B7D716 /* SplashScreen.swift in Sources */,
 				7D6CF52624BECAE100B7D716 /* WebViewControl.swift in Sources */,
 				7D4CA59D24D3E269006F5A26 /* NetworkManager.swift in Sources */,
@@ -426,7 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PP625QKW62;
 				INFOPLIST_FILE = EPRINE_FAVICON/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -434,7 +442,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Eprine-favicon";
 				PRODUCT_NAME = EPRINE;
 				SWIFT_VERSION = 5.0;
@@ -448,7 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PP625QKW62;
 				INFOPLIST_FILE = EPRINE_FAVICON/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -456,7 +464,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Eprine-favicon";
 				PRODUCT_NAME = EPRINE;
 				SWIFT_VERSION = 5.0;

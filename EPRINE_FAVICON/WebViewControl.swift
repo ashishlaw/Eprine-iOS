@@ -1,7 +1,7 @@
 //
 //  WebViewControl.swift
 //  EPRINE
-//
+//testath01+eprinetherapist@gmail.com
 //  Created by Mobile on 15/07/20.
 //  Copyright © 2020 Mobile. All rights reserved.
 //https://eprine.adaptivetelehealth.com/index.php/api/login.json
@@ -77,7 +77,8 @@ class WebViewControl: UIViewController, UIWebViewDelegate, WKNavigationDelegate 
         if webView.url == URL.init(string: hitURL) {
             print("UserLogout")
             UserStore.shared.boolBioMetric = false
-            UserStore.shared.boolRememberLogin = false
+           // UserStore.shared.boolRememberLogin = false
+            UserStore.shared.boolLogout = true
             UserStore.shared.deviceToken = ""
             UserStore.shared.token = ""
             self.appDel.setLogin()

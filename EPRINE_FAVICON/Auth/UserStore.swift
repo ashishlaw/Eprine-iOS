@@ -25,6 +25,7 @@ class UserStore: NSObject {
     var rememberKey    = "remember"
     var usernameKey    = "username"
     var passwordKey    = "password"
+    var logoutKey      = "logout"
     
     //MARK:- Cart Type
     var token: String {
@@ -37,7 +38,7 @@ class UserStore: NSObject {
     
     var deviceToken: String {
         get {
-            return UserDefaults.standard.value(forKey: deviceTokenKey) as? String ?? ""
+            return UserDefaults.standard.value(forKey: deviceTokenKey) as? String ?? "hfhhjfsjjjsjtrjtrjrsjrtj"
         } set {
             UserDefaults.standard.set(newValue, forKey: deviceTokenKey)
         }
@@ -72,6 +73,14 @@ class UserStore: NSObject {
             return UserDefaults.standard.value(forKey: passwordKey) as? String ?? ""
         } set {
             UserDefaults.standard.set(newValue, forKey: passwordKey)
+        }
+    }
+    
+    var boolLogout: Bool {
+        get {
+            return UserDefaults.standard.value(forKey: logoutKey) as? Bool ?? false
+        } set {
+            UserDefaults.standard.set(newValue, forKey: logoutKey)
         }
     }
 }

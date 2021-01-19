@@ -3,4 +3,86 @@
    uuid = "5F84DCCD-5969-41CA-8CFC-6CC28A841DEA"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C343E0D6-87DB-42AF-83B7-17C1F2B5ADF7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EPRINE_FAVICON/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "checkLoginApi()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBE71651-293E-4F51-A61F-02E9F30815F4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EPRINE_FAVICON/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "checkLoginApi()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C58FBCE7-4E0B-4555-ADDE-9B28BBA28F36"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EPRINE_FAVICON/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "checkLoginApi()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C58FBCE7-4E0B-4555-ADDE-9B28BBA28F36 - 3634e3e7af596cea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EPRINE.ViewController.checkLoginApi() -&gt; ()"
+                  moduleName = "EPRINE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cspc/Desktop/Rupinder_Data/EPRINE_FAVICON/EPRINE_FAVICON/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "2051">
+               </Location>
+               <Location
+                  uuid = "C58FBCE7-4E0B-4555-ADDE-9B28BBA28F36 - a1917a7201717df7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in EPRINE.ViewController.checkLoginApi() -&gt; ()"
+                  moduleName = "EPRINE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cspc/Desktop/Rupinder_Data/EPRINE_FAVICON/EPRINE_FAVICON/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "142">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

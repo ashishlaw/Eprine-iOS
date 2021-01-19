@@ -49,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSSubscriptionObserver {
             print("User accepted notifications: \(accepted)")
         })
         DispatchQueue.main.async {
-            if UserStore.shared.token == "" {
+            if UserStore.shared.boolLogout == true {
                 self.setLogin()
             } else {
                 if UserStore.shared.boolBioMetric {
